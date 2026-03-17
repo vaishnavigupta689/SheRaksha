@@ -38,7 +38,9 @@ function initMap() {
 }
 
 function getUserLocation() {
+    
     if (navigator.geolocation) {
+        alert("We use your location only to show nearby areas. No data is stored.");
         navigator.geolocation.getCurrentPosition((pos) => {
             const { latitude, longitude } = pos.coords;
             map.setView([latitude, longitude], 15);
