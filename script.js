@@ -13,10 +13,10 @@ function navigateTo(pageId) {
     }
 }
 
-function handleAuth(event) {
-    event.preventDefault(); // Stop form refresh
-    navigateTo('map-page');
-}
+//function handleAuth(event) {
+//    event.preventDefault(); // Stop form refresh
+//    navigateTo('map-page');
+//}
 
 let map;
 function initMap() {
